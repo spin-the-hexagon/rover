@@ -21,7 +21,16 @@
 
 --!strict
 
+-- Make component libraries work by globalizing Rover
+local Universe = _G
+
+if Universe.RoverCache then
+	return Universe.RoverCache
+end
+
 local Rover = {}
+
+Universe.RoverCache = Rover
 
 -- Signals
 export type SignalConnection<T> = {
