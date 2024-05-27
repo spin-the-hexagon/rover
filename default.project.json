@@ -1,3 +1,17 @@
 {
-	"name": "Rover"
+  "name": "rover",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Libraries": {
+        "$className": "Folder",
+        "Rover": {
+          "$className": "Folder",
+          "$path": "src/lua"
+        }
+      }
+    }
+  }
 }
